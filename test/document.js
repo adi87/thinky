@@ -122,7 +122,7 @@ describe('save', function() {
         num: num
       })
       assert.equal(doc.isSaved(), false);
-      assert.equal(doc.setSaved());
+      doc.setSaved();
       assert.equal(doc.isSaved(), true);
     });
 

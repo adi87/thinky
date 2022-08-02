@@ -1,13 +1,13 @@
 {
   "name": "thinky",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "RethinkDB ORM for Node.js",
   "main": "lib/thinky.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --check-leaks -t 20000"
+    "test": "mocha --check-leaks -t 20000 --globals doc,doc2"
   },
   "repository": {
     "type": "git",
@@ -23,12 +23,12 @@
   "bugs": {
     "url": "https://github.com/neumino/thinky/issues"
   },
-  "dependencies":{
-    "rethinkdbdash": "~2.2.20",
+  "dependencies": {
     "bluebird": "~2.10.2",
-    "validator": "~ 3.22.1"
+    "rethinkdbdash": "~2.2.20",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
-    "mocha": "~1.21.5"
+    "mocha": "^10.0.0"
   }
 }
