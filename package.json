@@ -1,8 +1,11 @@
 {
   "name": "thinky",
-  "version": "2.2.9",
+  "version": "2.2.10",
   "description": "RethinkDB ORM for Node.js",
   "main": "lib/thinky.js",
+  "engines": {
+    "node": ">=18"
+  },
   "directories": {
     "test": "test"
   },
@@ -25,7 +28,7 @@
   },
   "dependencies": {
     "bluebird": "~2.10.2",
-    "rethinkdbdash": "~2.2.20",
+    "rethinkdbdash": "github:adi87/rethinkdbdash#2.2.21",
     "validator": "^13.7.0"
   },
   "devDependencies": {
